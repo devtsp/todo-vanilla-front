@@ -1,0 +1,109 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(235, 235, 235);
+	min-height: 100vh;
+	width: 100vw;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: transparent;
+}
+
+#app {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 400px;
+	padding: 40px;
+	border-radius: 6px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.input-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	height: 30px;
+}
+
+label[htmlFor='newItem'] {
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#newItem {
+	padding: 3px 6px;
+	height: 100%;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	flex-grow: 1;
+}
+
+.addButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	aspect-ratio: 1 / 1;
+	cursor: pointer;
+	border: 1px solid forestgreen;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.addButton span {
+	color: forestgreen;
+	font-size: 30px;
+	bottom: -4px;
+	font-weight: 800;
+	transform: translateY(-3px);
+}
+
+#itemList {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+	padding: 15px;
+}
+
+li {
+	display: flex;
+	gap: 20px;
+}
+
+.checkbox {
+	cursor: pointer;
+}
+
+.description {
+	font-size: 20px;
+	display: block;
+	transform: translateY(-3px);
+}
+
+.deleteButton {
+	margin-left: auto;
+	font-size: 10px;
+	cursor: pointer;
+	border: none;
+}
+
+#clearItemsButton {
+	font-size: 14px;
+	padding: 4px 8px;
+	cursor: pointer;
+	color: indianred;
+	border: 1px solid indianred;
+	border-radius: 3px;
+	margin-left: auto;
+	letter-spacing: 1px;
+}
